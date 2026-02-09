@@ -1,3 +1,38 @@
+# --- Environment variables ---
+.env
+.env.*
+
+# --- Python virtual environments ---
+venv/
+Enve/
+.env_venv/
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Streamlit ---
+.streamlit/
+
+# --- Logs & temp files ---
+*.log
+*.tmp
+
+# --- Hugging Face / model cache ---
+.cache/
+**/.cache/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
