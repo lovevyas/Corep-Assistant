@@ -1,6 +1,9 @@
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+import os
+os.environ["HF_HOME"] = "/tmp/huggingface"
+
 
 class RuleRetriever:
     def __init__(self, rules_path):

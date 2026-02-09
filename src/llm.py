@@ -1,6 +1,13 @@
 import google.generativeai as genai
 import json
 import os
+import warnings
+
+warnings.filterwarnings(
+    "ignore",
+    category=FutureWarning,
+    module="google.generativeai"
+)
 
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
