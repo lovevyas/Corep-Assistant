@@ -1,0 +1,17 @@
+Article 26 CRR:
+Common Equity Tier 1 (CET1) capital consists of paid-in capital, retained earnings, and disclosed reserves.
+
+Article 51 CRR:
+Additional Tier 1 (AT1) capital consists of instruments that are perpetual, subordinated, and fully paid-in.
+
+Article 62 CRR:
+Tier 2 capital consists of subordinated instruments with an original maturity of at least five years.
+
+Article 72 CRR:
+Total Own Funds is the sum of Tier 1 capital and Tier 2 capital.
+
+COREP Own Funds Template C 01.00:
+Row 010 reports Common Equity Tier 1 capital.
+Row 020 reports Additional Tier 1 capital.
+Row 040 reports Tier 2 capital.
+Row 030 reports Total Own Funds.
