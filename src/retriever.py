@@ -1,8 +1,9 @@
+import os
+os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")
 from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
-import os
-os.environ["HF_HOME"] = "/tmp/huggingface"
+
 
 
 class RuleRetriever:

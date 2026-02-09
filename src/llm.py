@@ -1,6 +1,3 @@
-import google.generativeai as genai
-import json
-import os
 import warnings
 
 warnings.filterwarnings(
@@ -8,6 +5,10 @@ warnings.filterwarnings(
     category=FutureWarning,
     module="google.generativeai"
 )
+
+import google.generativeai as genai
+import json
+import os
 
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
