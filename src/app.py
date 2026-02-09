@@ -1,5 +1,5 @@
 import streamlit as st
-
+from pathlib import Path
 from retriever import RuleRetriever
 from llm import generate_structured_output
 from schema import COREP_SCHEMA
@@ -18,7 +18,9 @@ st.caption("LLM-assisted prototype for PRA COREP Own Funds reporting")
 # ---------- INIT RETRIEVER ----------
 @st.cache_resource
 def load_retriever():
-    return RuleRetriever("../data/rules.txt")
+    base_dir = Path(__file__).resolve().parent.parent
+    rules_path = base_dir / "data" / "rules.txt"
+    return RuleRetriever(str(rules_path))
 
 retriever = load_retriever()
 
